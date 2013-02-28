@@ -19,6 +19,8 @@ int main(int argc, const char * argv[])
         
         NSLog(@"The value of myFraction is:");
         [myFraction print];
+ 
+        NSLog(@"The value of myFraction using dot operator is %i/%i:", myFraction.numerator, myFraction.denominator);
         
     }
     return 0;
