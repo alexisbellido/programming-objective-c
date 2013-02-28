@@ -17,6 +17,14 @@
     NSLog(@"%i/%i", numerator, denominator);
 }
 
+-(void) add: (Fraction *) f
+{
+    // To add two fractions
+    // a/b + c/d = ((a*d) + (b*c)) / (b*d)
+    numerator = numerator * f.denominator + denominator * f.numerator;
+    denominator = denominator * f.denominator;
+}
+
 -(double) convertToNum
 {
     if (denominator != 0)
