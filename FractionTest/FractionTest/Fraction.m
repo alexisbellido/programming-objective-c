@@ -40,6 +40,8 @@
     // a/b + c/d = ((a*d) + (b*c)) / (b*d)
     numerator = numerator * f.denominator + denominator * f.numerator;
     denominator = denominator * f.denominator;
+    
+    [self reduce];
 }
 
 -(double) convertToNum

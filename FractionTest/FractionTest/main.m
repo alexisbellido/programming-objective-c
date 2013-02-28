@@ -32,7 +32,6 @@ int main(int argc, const char * argv[])
         [bFraction setTo: 1 over: 2];
         [aFraction add: bFraction];
         NSLog(@"The value of aFraction after adding bFraction is:");
-        [aFraction reduce];
         [aFraction print];
 
     }
