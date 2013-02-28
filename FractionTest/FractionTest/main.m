@@ -12,7 +12,7 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        Fraction *myFraction = [[ Fraction alloc] init];
+        Fraction *myFraction = [[Fraction alloc] init];
         
         myFraction.numerator = 1;
         myFraction.denominator = 8;
@@ -21,6 +21,11 @@ int main(int argc, const char * argv[])
         [myFraction print];
  
         NSLog(@"The value of myFraction using dot operator is %i/%i:", myFraction.numerator, myFraction.denominator);
+        
+        Fraction *aFraction = [[Fraction alloc] init];
+        [aFraction setTo: 100 over: 200];
+        NSLog(@"The value of aFraction is:");
+        [aFraction print];
         
     }
     return 0;
