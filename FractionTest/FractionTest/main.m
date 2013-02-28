@@ -15,6 +15,7 @@ int main(int argc, const char * argv[])
         Fraction *myFraction = [[Fraction alloc] init];
         Fraction *aFraction = [[Fraction alloc] init];
         Fraction *bFraction = [[Fraction alloc] init];
+        Fraction *resultFraction;
         
         myFraction.numerator = 1;
         myFraction.denominator = 8;
@@ -30,9 +31,9 @@ int main(int argc, const char * argv[])
 
         [aFraction setTo: 1 over: 4];
         [bFraction setTo: 1 over: 2];
-        [aFraction add: bFraction];
-        NSLog(@"The value of aFraction after adding bFraction is:");
-        [aFraction print];
+        resultFraction = [aFraction add: bFraction];
+        NSLog(@"The value of resultFraction after adding bFraction to aFraction is:");
+        [resultFraction print];
 
     }
     return 0;
